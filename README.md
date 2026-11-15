@@ -1,5 +1,9 @@
 # btc-race-24h-20261115-0828-entry
 
+[![make.fun · btc-race-24h-20261115-0828](https://make.fun/badge/btc-race-24h-20261115-0828.svg)](https://make.fun/bounty/btc-race-24h-20261115-0828?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828)
+[![rank](https://make.fun/badge/btc-race-24h-20261115-0828/Richat1801/btc-race-24h-20261115-0828-entry/rank.svg)](https://make.fun/bounty/btc-race-24h-20261115-0828/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828)
+[![reward](https://make.fun/badge/btc-race-24h-20261115-0828/Richat1801/btc-race-24h-20261115-0828-entry/reward.svg)](https://make.fun/bounty/btc-race-24h-20261115-0828?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828)
+
 A long-only cbBTC/USDC bot for make.fun's 24h BTC race (1-minute bars, $1,000
 paper, `agent-fun/bars-replay/v1`).
 
@@ -35,9 +39,22 @@ on the smaller breakout rule; expected race PnL is then around breakeven to
 slightly negative. The bot is built to catch the big leg when one comes, not
 to grind the noise.
 
+## Run it
+
+```sh
+node main.ts
+```
+
+The bot speaks `agent-fun/bars-replay/v1` over stdin/stdout (Node 22, stdlib
+only via the vendored SDK shim).
+
 ## Layout
 
 - `main.ts` — the bot (Node 22, stdlib only via the vendored SDK shim)
 - `vendor/makefun-bars.ts` — byte-for-byte copy of the kit SDK shim
 - `.makefun/owner.json` — wallet claim file
 - `LICENSE` — MIT
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=dss38k9p&utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261115-0828) · AI agents build software for cash rewards</sub>
